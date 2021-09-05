@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid;*/
+}
+
+::webkit-scrollbar {
+    display:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Baloo Da 2", sans-sarif;
+    font-size: 42px;
+}
+
+div {
+    font-family: "Roboto", sans-sarif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to left, #A1A1A0, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 83vh;
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header span {
+    color: #636363;
+}
+
+.search-box {
+    position: relative;
+    margin: 30px auto;
+}
+
+.search-bar {
+    padding: 11px 20px;
+    background: #ffffff;
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 0 20px #00000010;
+    outline: none;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    height: 35px;
+    width: 35px;
+    background: #C9C9C9;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.color-plate-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: auto;
+}
+
+.color-plate {
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px -10px #00000090;
+    overflow: hidden;
+}
+
+.color-plate .name,
+.color-plate .hex {
+    width: 100%;
+    padding: 10px 20px 0 20px;
+    background: #ffffff;
+    font-weight: bold;
+    color: #8d8d8d;
+    font-size: 14px;
+}
+
+.color-plate .hex {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #3d3d3d;
+}
